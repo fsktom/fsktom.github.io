@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <title>Adventskalender</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="https://w2ui.com/src/w2ui-1.4.2.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://w2ui.com/src/w2ui-1.4.2.min.css" />
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adventskalender</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://w2ui.com/src/w2ui-1.4.2.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://w2ui.com/src/w2ui-1.4.2.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Adventskalender</h1>
 
-</head>
-<body>
+    <div class="calendar">
+      <!-- Hier kommen die Türchen des Adventskalenders -->
+      <!-- Beispiel: 24 Türchen -->
+      <!-- Du kannst Bilder, Texte oder sogar kleine Animationen einfügen -->
+      <!-- Die IDs "door1", "door2", ... können für individuelle Inhalte genutzt werden -->
+      <!-- Z.B. könntest du <div id="door1" class="door" onclick="showContent('door1')">1</div> einfügen und die Funktion showContent implementieren, um beim Klick auf Türchen 1 den Inhalt anzuzeigen -->
+      <!-- Hier ist ein vereinfachtes Beispiel ohne individuelle Inhalte: -->
+      <input type="button" value="1" onclick="tag(1);" class="door" />
+      <input type="button" value="2" onclick="tag(2);" class="door" />
+      <input type="button" value="3" onclick="tag(3);" class="door" />
+      <input type="button" value="4" onclick="tag(4);" class="door" />
+      <input type="button" value="5" onclick="tag(5);" class="door" />
+      <input type="button" value="6" onclick="tag(6);" class="door" />
+      <input type="button" value="7" onclick="tag(7);" class="door" />
+      <input type="button" value="8" onclick="tag(8);" class="door" />
+      <input type="button" value="9" onclick="tag(9);" class="door" />
+      <input type="button" value="10" onclick="tag(10);" class="door" />
+      <input type="button" value="11" onclick="tag(11);" class="door" />
+      <input type="button" value="12" onclick="tag(12);" class="door" />
+      <input type="button" value="13" onclick="tag(13);" class="door" />
+      <input type="button" value="14" onclick="tag(14);" class="door" />
+      <input type="button" value="15" onclick="tag(15);" class="door" />
+      <input type="button" value="16" onclick="tag(16);" class="door" />
+      <input type="button" value="17" onclick="tag(17);" class="door" />
+      <input type="button" value="18" onclick="tag(18);" class="door" />
+      <input type="button" value="19" onclick="tag(19);" class="door" />
+      <input type="button" value="20" onclick="tag(20);" class="door" />
+      <input type="button" value="21" onclick="tag(21);" class="door" />
+      <input type="button" value="22" onclick="tag(22);" class="door" />
+      <input type="button" value="23" onclick="tag(23);" class="door" />
+      <input type="button" value="24" onclick="tag(24);" class="door" />
+    </div>
 
-<h1>Adventskalender</h1>
+    <script>
+      // Funktion, um den Inhalt eines Türchens anzuzeigen (Beispiel)
+      function showContent(doorId) {
+        // Hier könntest du Logik einfügen, um den Inhalt des Türchens anzuzeigen
+        // Z.B. bei Klick auf ein Türchen könnte ein Bild oder Text eingeblendet werden
+        alert("Du hast Türchen " + doorId + " geöffnet!");
+      }
 
-<div class="calendar">
-  <!-- Hier kommen die Türchen des Adventskalenders -->
-  <!-- Beispiel: 24 Türchen -->
-  <!-- Du kannst Bilder, Texte oder sogar kleine Animationen einfügen -->
-  <!-- Die IDs "door1", "door2", ... können für individuelle Inhalte genutzt werden -->
-  <!-- Z.B. könntest du <div id="door1" class="door" onclick="showContent('door1')">1</div> einfügen und die Funktion showContent implementieren, um beim Klick auf Türchen 1 den Inhalt anzuzeigen -->
-  <!-- Hier ist ein vereinfachtes Beispiel ohne individuelle Inhalte: -->
-  <input type="button" value="1" onclick="tag(1);" class="door"/>
-  <input type="button" value="2" onclick="tag(2);" class="door"/>
-  <input type="button" value="3" onclick="tag(3);" class="door"/>
-  <input type="button" value="4" onclick="tag(4);" class="door"/>
-  <input type="button" value="5" onclick="tag(5);" class="door"/>
-  <input type="button" value="6" onclick="tag(6);" class="door"/>
-  <input type="button" value="7" onclick="tag(7);" class="door"/>
-  <input type="button" value="8" onclick="tag(8);" class="door"/>
-  <input type="button" value="9" onclick="tag(9);" class="door"/>
-  <input type="button" value="10" onclick="tag(10);" class="door"/>
-  <input type="button" value="11" onclick="tag(11);" class="door"/>
-  <input type="button" value="12" onclick="tag(12);" class="door"/>
-  <input type="button" value="13" onclick="tag(13);" class="door"/>
-  <input type="button" value="14" onclick="tag(14);" class="door"/>
-  <input type="button" value="15" onclick="tag(15);" class="door"/>
-  <input type="button" value="16" onclick="tag(16);" class="door"/>
-  <input type="button" value="17" onclick="tag(17);" class="door"/>
-  <input type="button" value="18" onclick="tag(18);" class="door"/>
-  <input type="button" value="19" onclick="tag(19);" class="door"/>
-  <input type="button" value="20" onclick="tag(20);" class="door"/>
-  <input type="button" value="21" onclick="tag(21);" class="door"/>
-  <input type="button" value="22" onclick="tag(22);" class="door"/>
-  <input type="button" value="23" onclick="tag(23);" class="door"/>
-  <input type="button" value="24" onclick="tag(24);" class="door"/>
+      function tag(doorId) {
+        let today = new Date().getDate();
 
-</div>
+        let imagePath = "Bilder_Kalender/" + doorId + ".jpg";
 
-<script>
-  // Funktion, um den Inhalt eines Türchens anzuzeigen (Beispiel)
-  function showContent(doorId) {
-    // Hier könntest du Logik einfügen, um den Inhalt des Türchens anzuzeigen
-    // Z.B. bei Klick auf ein Türchen könnte ein Bild oder Text eingeblendet werden
-    alert("Du hast Türchen " + doorId + " geöffnet!");
-  }
-
-  function tag(doorId){
-    let today = new Date().getDate();
-
-    let imagePath = "Bilder_Kalender/" + doorId + ".jpg";
-
-    console.log(today, doorId, today >= doorId);
-    if (today >= doorId) {
-      w2popup.open({
-        title: doorId + '. Dezemeber',
-        width: 1000,
-        height: 1000,
-        body: '<div class="popupWindow"><img src=' + imagePath + '></img></div>'
-      });
-    } else {
-      w2popup.open({title: "NOCH ZU FRÜH DU KEK", body: '<div style="text-align: center;"><img src="Bilder_Kalender/error.jpg"></img></div>'})
-    }
-}
-
-</script>
-
-</body>
+        console.log(today, doorId, today >= doorId);
+        if (today >= doorId) {
+          w2popup.open({
+            title: doorId + ". Dezemeber",
+            width: 1000,
+            height: 1000,
+            body:
+              '<div class="popupWindow"><img src=' +
+              imagePath +
+              "></img></div>",
+          });
+        } else {
+          w2popup.open({
+            title: "NOCH ZU FRÜH DU KEK",
+            width: 1000,
+            height: 1000,
+            body: '<div class="popupWindow"><img src="Bilder_Kalender/error.jpg"></img></div>',
+          });
+        }
+      }
+    </script>
+  </body>
 </html>

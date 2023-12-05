@@ -24,7 +24,10 @@ h1 {
 /* Stil für die Türchen */
 .calendar {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 6 Spalten für gleichmäßige Verteilung */
+  grid-template-columns: repeat(
+    6,
+    1fr
+  ); /* 6 Spalten für gleichmäßige Verteilung */
   grid-column-gap: 100px; /* Horizontaler Abstand zwischen den Türchen */
   grid-row-gap: 100px; /* Vertikaler Abstand zwischen den Türchen */
   justify-items: center; /* Zentrieren der Türchen horizontal */
