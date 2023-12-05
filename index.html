@@ -66,15 +66,28 @@
 
         console.log(today, doorId, today >= doorId);
         if (today >= doorId) {
-          w2popup.open({
-            title: doorId + ". Dezemeber",
-            width: 1000,
-            height: 1000,
-            body:
-              '<div class="popupWindow"><img src=' +
-              imagePath +
-              "></img></div>",
-          });
+          if (doorId == 2 || doorId == 3) {
+            let path = "Bilder_Kalender/" + doorId + ".mp4";
+            w2popup.open({
+              title: doorId + ". Dezemeber",
+              width: 500,
+              height: 900,
+              body:
+                '<div class="popupWindow"><video autoplay><source src="' +
+                path +
+                '" type="video/mp4"></video></div>',
+            });
+          } else {
+            w2popup.open({
+              title: doorId + ". Dezemeber",
+              width: 1000,
+              height: 1000,
+              body:
+                '<div class="popupWindow"><img src=' +
+                imagePath +
+                "></img></div>",
+            });
+          }
         } else {
           w2popup.open({
             title: "NOCH ZU FRÜH DU KEK",

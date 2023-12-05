@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lato:wght@700&display=swap');
+
 /* Allgemeine Stildefinitionen */
 
 /* Hintergrund */
@@ -9,23 +11,32 @@ body {
 }
 
 /* Hintergrundbild */
-body {
+html, body {
   background-image: url(Bilder_Kalender/Koblenz-Weihnachtsmarkt-2.avif);
   background-size: cover; /* Bild anpassen, um den gesamten Bereich zu decken */
-  font-family: Arial, sans-serif; /* Falls gewünscht, die Schriftart anpassen */
+  font-family: Lato, sans-serif; /* Falls gewünscht, die Schriftart anpassen */
   margin: 0;
   padding: 20px;
+  background-repeat: no-repeat;
+  height: 100%;
+  /* margin: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
   text-align: center;
+  font-family: 'Ephesis', cursive;
+  font-size: 5em;
+  color: white;
 }
 
 /* Stil für die Türchen */
 .calendar {
   display: grid;
   grid-template-columns: repeat(
-    6,
+    4,
     1fr
   ); /* 6 Spalten für gleichmäßige Verteilung */
   grid-column-gap: 100px; /* Horizontaler Abstand zwischen den Türchen */
@@ -37,12 +48,15 @@ h1 {
 .door {
   width: 100px; /* Breite eines Türchens */
   height: 100px; /* Höhe eines Türchens */
-  border: 1px solid #ccc;
+  border: 0.2em solid #ccc;
   text-align: center;
   line-height: 100px;
   font-size: 24px;
   cursor: pointer;
   color: white;
+  font-family: 'Lato', sans-serif;
+  background: none;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .door:hover {
@@ -52,8 +66,13 @@ h1 {
 .door:hover {
   background-color: #e0e0e0; /* Farbe ändern, wenn Maus darüber bewegt wird */
 }
-/*
+
+.popupWindow {
+
+}
+
 .popupWindow img {
-  max-width: 950px;
-  max-height: 950px;
-} */
+  margin: auto;
+  display: block;
+}
+
