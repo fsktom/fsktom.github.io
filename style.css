@@ -1,0 +1,52 @@
+/* Allgemeine Stildefinitionen */
+
+/* Hintergrund */
+body {
+  background-color: #f2f2f2; /* Hier den gewünschten Hintergrund einfügen */
+  font-family: Arial, sans-serif; /* Falls gewünscht, die Schriftart anpassen */
+  margin: 0;
+  padding: 0px;
+}
+
+/* Hintergrundbild */
+body {
+  background-image: url(Bilder_Kalender/Koblenz-Weihnachtsmarkt-2.avif);
+  background-size: cover; /* Bild anpassen, um den gesamten Bereich zu decken */
+  font-family: Arial, sans-serif; /* Falls gewünscht, die Schriftart anpassen */
+  margin: 0;
+  padding: 20px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+/* Stil für die Türchen */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 Spalten für gleichmäßige Verteilung */
+  grid-column-gap: 100px; /* Horizontaler Abstand zwischen den Türchen */
+  grid-row-gap: 100px; /* Vertikaler Abstand zwischen den Türchen */
+  justify-items: center; /* Zentrieren der Türchen horizontal */
+  align-items: center; /* Zentrieren der Türchen vertikal */
+}
+
+.door {
+  width: 100px; /* Breite eines Türchens */
+  height: 100px; /* Höhe eines Türchens */
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.door:hover {
+  background-color: #e0e0e0; /* Farbe ändern, wenn Maus darüber bewegt wird */
+}
+
+.door:hover {
+  background-color: #e0e0e0; /* Farbe ändern, wenn Maus darüber bewegt wird */
+}
