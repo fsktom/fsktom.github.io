@@ -17,7 +17,6 @@ body {
   padding: 20px;
 }
 
-
 h1 {
   text-align: center;
 }
@@ -50,3 +49,8 @@ h1 {
 .door:hover {
   background-color: #e0e0e0; /* Farbe ändern, wenn Maus darüber bewegt wird */
 }
+/*
+.popupWindow img {
+  max-width: 950px;
+  max-height: 950px;
+} */
